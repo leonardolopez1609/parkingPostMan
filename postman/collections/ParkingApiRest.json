@@ -1,0 +1,755 @@
+{
+	"info": {
+		"_postman_id": "40fecee5-113e-41d5-b91d-acc924d599a3",
+		"name": "ParkingApiRest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "25647290-40fecee5-113e-41d5-b91d-acc924d599a3"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/users",
+			"id": "ae62b167-aced-4898-806a-f006e7b8d8d0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"content-type": true,
+					"content-length": true,
+					"host": true,
+					"user-agent": true,
+					"accept": true,
+					"connection": true,
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Usuario Ejemplo\",\r\n    \"role\": \"SOCIO\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users"
+					]
+				},
+				"description": "Crear usuarios"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/parkings",
+			"id": "edfdefcc-47e2-4180-a79e-4d59d4e0cd64",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true,
+					"content-type": true,
+					"content-length": true,
+					"host": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Parking N2\",\r\n    \"spots\": 20\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/parkings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"parkings"
+					]
+				},
+				"description": "Crear Parqueadero"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/parkings/update/1",
+			"id": "1280e9d7-d6e7-44b5-bd50-fa42204969d6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"connection": true,
+					"accept": true,
+					"user-agent": true,
+					"accept-encoding": true,
+					"content-type": true,
+					"content-length": true,
+					"host": true
+				}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Parking N1\",\r\n    \"spots\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/parkings/update/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"parkings",
+						"update",
+						"1"
+					]
+				},
+				"description": "Actualizar Parqueadero por su ID"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/parkings/2",
+			"id": "d37aeabe-adeb-4745-b0a1-fad820b1706d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"connection": true,
+					"accept-encoding": true,
+					"accept": true,
+					"user-agent": true,
+					"host": true
+				}
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/parkings/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"parkings",
+						"2"
+					]
+				},
+				"description": "Eliminar un parqueadero"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/parkings/getone/1",
+			"id": "9ded995e-8cba-481f-aa98-55c23e6dfb62",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"connection": true,
+					"accept-encoding": true,
+					"accept": true,
+					"user-agent": true,
+					"host": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/parkings/getone/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"parkings",
+						"getone",
+						"1"
+					]
+				},
+				"description": "Obtener un Parqueadero"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/users/1/associate/1",
+			"id": "21c3fdf4-55ef-427d-bc94-42e914dec4d8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"connection": true,
+					"accept": true,
+					"user-agent": true,
+					"accept-encoding": true,
+					"content-length": true,
+					"host": true
+				}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/users/1/associate/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						"1",
+						"associate",
+						"1"
+					]
+				},
+				"description": "Asociar parqueadero a socio\r\nValor 1: id socio, valor 2 id parqueadero"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/enterings/DVD333/in/1",
+			"id": "524dd259-00fe-418e-846c-b0f765238d85",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"connection": true,
+					"accept-encoding": true,
+					"accept": true,
+					"user-agent": true,
+					"host": true,
+					"content-length": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/enterings/VVD333/in/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"enterings",
+						"VVD333",
+						"in",
+						"1"
+					]
+				},
+				"description": "Registrar entrada de vehículo a un parqueadero por su id.\r\nValor 1: Placa, Valor 2: id parqueadero."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/histories/departure/DVD333",
+			"id": "65fa6ed3-3f2e-43f2-afc3-d0355660cadc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"connection": true,
+					"accept-encoding": true,
+					"accept": true,
+					"user-agent": true,
+					"host": true,
+					"content-length": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/histories/departure/DVD333",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"histories",
+						"departure",
+						"DVD333"
+					]
+				},
+				"description": "Registrar salida de vehículos por su placa"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/users/getparkings/1",
+			"id": "b101eea9-fa90-4ea8-adc4-1c4a27f7fbf4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/users/getparkings/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						"getparkings",
+						"1"
+					]
+				},
+				"description": "Ver listado/detalle de todos los vehículos que están en un parqueadero por id del socio."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/parkings/getvehiclesact/1",
+			"id": "95af91b3-86d0-41f0-b74f-4e0bf023338a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"connection": true,
+					"accept-encoding": true,
+					"accept": true,
+					"user-agent": true,
+					"host": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/parkings/getvehiclesact/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"parkings",
+						"getvehiclesact",
+						"1"
+					]
+				},
+				"description": "Devuelve el listado de vehículos que se encuentran\r\nactualmente parqueados para un parqueadero por su id."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/users/getparkings/1",
+			"id": "748d8ee0-51ca-4021-9cf4-58c35444d412",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"connection": true,
+					"accept-encoding": true,
+					"accept": true,
+					"user-agent": true,
+					"host": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/users/getparkings/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						"getparkings",
+						"1"
+					]
+				},
+				"description": "\"Listado de vehículos por socio\" devuelve el listado de vehículos que se\r\nencuentran actualmente parqueados para un socio en específico en todos sus parqueaderos."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/parkings/getvehicleact/1",
+			"id": "bc9075dd-b726-409c-a30b-855112057188",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"accept-encoding": true,
+					"connection": true,
+					"accept": true,
+					"host": true,
+					"user-agent": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/parkings/getvehicleact/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"parkings",
+						"getvehicleact",
+						"1"
+					]
+				},
+				"description": "\"Detalle de vehículo\", devuelve la información del vehículo mediante su id"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/parkings/getvehiclesrank/1",
+			"id": "0ea67238-3c6d-43cc-99ee-f0b13a7592ea",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"connection": true,
+					"accept-encoding": true,
+					"accept": true,
+					"user-agent": true,
+					"host": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/parkings/getvehiclesrank/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"parkings",
+						"getvehiclesrank",
+						"1"
+					]
+				},
+				"description": "los 10 vehículos que más veces se han registrado en el parqueadero y cuantas\r\nveces han sido."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/parkings/getvehiclesfirst",
+			"id": "341fcbfd-43f3-4851-95e2-df09e024872c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"connection": true,
+					"accept-encoding": true,
+					"host": true,
+					"accept": true,
+					"user-agent": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/parkings/getvehiclesfirst",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"parkings",
+						"getvehiclesfirst"
+					]
+				},
+				"description": "Vehículos parqueados en todos los parqueaderos los cuales son por primera\r\nvez."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/parkings/getvehiclesrep",
+			"id": "e5772585-c301-4b8a-a5bc-bb82e3a3a81b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"connection": true,
+					"accept-encoding": true,
+					"accept": true,
+					"user-agent": true,
+					"host": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/parkings/getvehiclesrep",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"parkings",
+						"getvehiclesrep"
+					]
+				},
+				"description": "vehículos parqueados en todos los parqueaderos cuales no son por primera\r\nvez."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/parkings/getaverage/min/28-02-2023/max/1-03-2023/in/1",
+			"id": "ba47fa65-0ccd-4640-96fe-dd14e6385e79",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"connection": true,
+					"accept-encoding": true,
+					"accept": true,
+					"user-agent": true,
+					"host": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/parkings/getaverage/min/28-02-2023/max/1-03-2023/in/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"parkings",
+						"getaverage",
+						"min",
+						"28-02-2023",
+						"max",
+						"1-03-2023",
+						"in",
+						"1"
+					]
+				},
+				"description": "Obtener el promedio de uso de un parqueadero por rango de fecha\r\nValor 1: Fecha inicio, Valor 2: fecha final, Valor 3: id parqueadero."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/parkings/getaverageall/min/28-02-2023/max/1-03-2023",
+			"id": "f942327c-c150-42b6-b6d6-a2ac537f38ad",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"connection": true,
+					"accept-encoding": true,
+					"accept": true,
+					"user-agent": true,
+					"host": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/parkings/getaverageall/min/28-02-2023/max/1-03-2023",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"parkings",
+						"getaverageall",
+						"min",
+						"28-02-2023",
+						"max",
+						"1-03-2023"
+					]
+				},
+				"description": "Obtener el promedio de uso de todos los parqueaderos por un rango de fecha\r\nValor 1: fecha inicio, Valor 2: fecha final."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/parkings/getaveragehours/1",
+			"id": "c2ad9e45-64b0-4ae1-b1df-0a1dd923ebd2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"connection": true,
+					"accept-encoding": true,
+					"user-agent": true,
+					"accept": true,
+					"host": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/parkings/getaveragehours/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"parkings",
+						"getaveragehours",
+						"1"
+					]
+				},
+				"description": "Obtener el promedio de tiempo que están los vehículos en un parqueadero por su id."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/histories/getvehicles/min/28-02-2023/max/1-03-2023/in/1",
+			"id": "53924e6b-697e-4737-a07b-2b2cfd8a1b6d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"connection": true,
+					"accept-encoding": true,
+					"user-agent": true,
+					"accept": true,
+					"host": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/histories/getvehicles/min/28-02-2023/max/1-03-2023/in/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"histories",
+						"getvehicles",
+						"min",
+						"28-02-2023",
+						"max",
+						"1-03-2023",
+						"in",
+						"1"
+					]
+				},
+				"description": "Listado del historial de vehículos en un parqueadero ordenado desde la fecha de salida más reciente y filtrado a través de una fecha de inicio comparando con\r\nfecha de entrada del vehículo. Aplicando Rango de fechas.\r\nValue 1 : fecha inicio, Value 2: fecha final, value 3: id parqueadero"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/histories/getvehicles/min/25-02-2023/max/29-03-2023/in/1/plate/V",
+			"id": "b1ddf7ed-5f53-48e9-bf5e-56328b471b82",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"accept-encoding": true,
+					"accept": true,
+					"connection": true,
+					"user-agent": true,
+					"host": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/histories/getvehicles/min/25-02-2023/max/29-03-2023/in/1/plate/V",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"histories",
+						"getvehicles",
+						"min",
+						"25-02-2023",
+						"max",
+						"29-03-2023",
+						"in",
+						"1",
+						"plate",
+						"V"
+					]
+				},
+				"description": "Listado del historial de vehículos en un parqueadero ordenado desde la fecha de salida más reciente y filtrado a través de una fecha de inicio comparando con\r\nfecha de entrada del vehículo. Aplicando Rango de fechas y filtrado por contenido de la placa del vehículo.\r\nValue 1 : fecha inicio, Value 2: fecha final, value 3: id parqueadero , Value 4: placa"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "0c07855a-7011-44c2-842b-72473c08ee90",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
