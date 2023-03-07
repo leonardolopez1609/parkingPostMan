@@ -140,31 +140,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/user/email",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"user",
-								"email"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Enviar email Copy",
-					"id": "1bf914aa-de40-40c3-83c3-b040cf465b19",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/users/1/parkings",
+							"raw": "http://localhost:8080/api/users/email",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -173,8 +149,7 @@
 							"path": [
 								"api",
 								"users",
-								"1",
-								"parkings"
+								"email"
 							]
 						}
 					},
