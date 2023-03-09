@@ -20,7 +20,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Usuario 1\",\r\n    \"role\": \"SOCIO\"\r\n}",
+							"raw": "{\r\n    \"name\": \"Usuario 1\",\r\n    \"email\": \"usuario1@email.com\",\r\n    \"password\": \"1234\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -28,7 +28,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/users",
+							"raw": "http://localhost:8080/api/auth/register",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -36,7 +36,86 @@
 							"port": "8080",
 							"path": [
 								"api",
-								"users"
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"id": "bb59d656-d120-43cb-8316-cec20f2e3a6e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"leonardo@email.com\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/auth/authenticate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"authenticate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"id": "148c0d8e-7397-4567-b854-e77c411162ae",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZW9uYXJkb0BlbWFpbC5jb20iLCJpYXQiOjE2Nzg0MDIxMzcsImV4cCI6MTY3ODQyMzczN30.zLYHnKTQvrBUupmsvgJVkAI-YusXCYtzaIoLuaKdwoE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/auth/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"logout"
 							]
 						}
 					},
