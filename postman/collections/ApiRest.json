@@ -274,38 +274,6 @@
 					"response": []
 				},
 				{
-					"name": "Obtener historial vehiculos por rango fecha",
-					"id": "f8996756-48b8-4b6b-9128-db729bb1888e",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/histories/vehicles/datemin/06-03-2023/datemax/08-03-2023/in/parking/3",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"histories",
-								"vehicles",
-								"datemin",
-								"06-03-2023",
-								"datemax",
-								"08-03-2023",
-								"in",
-								"parking",
-								"3"
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Obtener historial vehiculos por rango fecha y caracter de placa",
 					"id": "d5c98091-a0ed-45f5-b22b-5c6de5de526b",
 					"protocolProfileBehavior": {
@@ -765,7 +733,7 @@
 					"response": []
 				},
 				{
-					"name": "Obtener promedio de uso de todos los parqueaderos por rango de fecha Copy",
+					"name": "Obtener promedio de un parqueadero por rango de fecha",
 					"id": "545d894f-6b23-4778-81ca-f6bac25fd93d",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -783,7 +751,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/parkings/average/datemin/07-03-2023/datemax/08-03-2023",
+							"raw": "http://localhost:8080/api/parkings/1/getaveragehouurs/datemin/07-03-2023/datemax/08-03-2023",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -792,7 +760,8 @@
 							"path": [
 								"api",
 								"parkings",
-								"average",
+								"1",
+								"getaveragehouurs",
 								"datemin",
 								"07-03-2023",
 								"datemax",
