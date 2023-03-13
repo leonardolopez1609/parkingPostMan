@@ -697,7 +697,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/parkings/2",
+							"raw": "http://localhost:8080/api/parking/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -705,7 +705,7 @@
 							"port": "8080",
 							"path": [
 								"api",
-								"parkings",
+								"parking",
 								"2"
 							]
 						}
@@ -768,7 +768,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzb2NpbzFAZW1haWwuY29tIiwiaWF0IjoxNjc4NzQyODI5LCJleHAiOjE2Nzg3NjQ0Mjl9.JYbqnl6yH6QODx021sYt_kabWjt7LzRButygFrwU9D0",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODc0NDU2NywiZXhwIjoxNjc4NzY2MTY3fQ.AmpWFpPPEMZIJ8rB7qgnuIXpomK9l7Y5W9E7GMKyH20",
 									"type": "string"
 								}
 							]
@@ -811,7 +811,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODcyMTM3MCwiZXhwIjoxNjc4NzQyOTcwfQ.DfDGZ9xa8ubJjh36JCLLIswch6A0NL-s_Lfxfa6IzIo",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyQGVtYWlsLmNvbSIsImlhdCI6MTY3ODc0Mzg4NCwiZXhwIjoxNjc4NzY1NDg0fQ.NkHmmqtvRRTSGrHu1MSYkr70bN4qsl60vMwxY_F3fk0",
 									"type": "string"
 								}
 							]
@@ -828,7 +828,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/parkings/1",
+							"raw": "http://localhost:8080/api/parking/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -836,7 +836,7 @@
 							"port": "8080",
 							"path": [
 								"api",
-								"parkings",
+								"parking",
 								"1"
 							]
 						}
@@ -872,7 +872,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/parkings/1/vehiclesact",
+							"raw": "http://localhost:8080/api/parking/1/vehiclesact",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -880,7 +880,7 @@
 							"port": "8080",
 							"path": [
 								"api",
-								"parkings",
+								"parking",
 								"1",
 								"vehiclesact"
 							]
@@ -900,7 +900,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzb2Npb3Rlc3RAZW1haWwuY29tIiwiaWF0IjoxNjc4NzM3NzU0LCJleHAiOjE2Nzg3NTkzNTR9.Lr5bVxXFf1eRIZBMaUNM9369a24neysivKGxravvfLs",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODc0NDU2NywiZXhwIjoxNjc4NzY2MTY3fQ.AmpWFpPPEMZIJ8rB7qgnuIXpomK9l7Y5W9E7GMKyH20",
 									"type": "string"
 								}
 							]
@@ -917,7 +917,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/parkings/active/vehicle/1",
+							"raw": "http://localhost:8080/api/parking/active/vehicle/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -925,7 +925,7 @@
 							"port": "8080",
 							"path": [
 								"api",
-								"parkings",
+								"parking",
 								"active",
 								"vehicle",
 								"1"
@@ -946,7 +946,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzb2Npb3Rlc3RAZW1haWwuY29tIiwiaWF0IjoxNjc4NzM3NzU0LCJleHAiOjE2Nzg3NTkzNTR9.Lr5bVxXFf1eRIZBMaUNM9369a24neysivKGxravvfLs",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODc0NDU2NywiZXhwIjoxNjc4NzY2MTY3fQ.AmpWFpPPEMZIJ8rB7qgnuIXpomK9l7Y5W9E7GMKyH20",
 									"type": "string"
 								}
 							]
@@ -990,7 +990,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzb2Npb3Rlc3RAZW1haWwuY29tIiwiaWF0IjoxNjc4NzM3NzU0LCJleHAiOjE2Nzg3NTkzNTR9.Lr5bVxXFf1eRIZBMaUNM9369a24neysivKGxravvfLs",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODc0NDU2NywiZXhwIjoxNjc4NzY2MTY3fQ.AmpWFpPPEMZIJ8rB7qgnuIXpomK9l7Y5W9E7GMKyH20",
 									"type": "string"
 								}
 							]
@@ -1007,7 +1007,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/parkings/user/1/vehiclesfirst",
+							"raw": "http://localhost:8080/api/parking/user/1/vehiclesfirst",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1015,7 +1015,7 @@
 							"port": "8080",
 							"path": [
 								"api",
-								"parkings",
+								"parking",
 								"user",
 								"1",
 								"vehiclesfirst"
@@ -1036,7 +1036,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzb2Npb3Rlc3RAZW1haWwuY29tIiwiaWF0IjoxNjc4NzM3NzU0LCJleHAiOjE2Nzg3NTkzNTR9.Lr5bVxXFf1eRIZBMaUNM9369a24neysivKGxravvfLs",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODc0NDU2NywiZXhwIjoxNjc4NzY2MTY3fQ.AmpWFpPPEMZIJ8rB7qgnuIXpomK9l7Y5W9E7GMKyH20",
 									"type": "string"
 								}
 							]
@@ -1126,7 +1126,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzb2Npb3Rlc3RAZW1haWwuY29tIiwiaWF0IjoxNjc4NzM3NzU0LCJleHAiOjE2Nzg3NTkzNTR9.Lr5bVxXFf1eRIZBMaUNM9369a24neysivKGxravvfLs",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODc0NDU2NywiZXhwIjoxNjc4NzY2MTY3fQ.AmpWFpPPEMZIJ8rB7qgnuIXpomK9l7Y5W9E7GMKyH20",
 									"type": "string"
 								}
 							]
@@ -1143,7 +1143,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/parkings/1/vehiclesrank",
+							"raw": "http://localhost:8080/api/parking/1/vehiclesrank",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1151,7 +1151,7 @@
 							"port": "8080",
 							"path": [
 								"api",
-								"parkings",
+								"parking",
 								"1",
 								"vehiclesrank"
 							]
@@ -1171,7 +1171,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODcyMTM3MCwiZXhwIjoxNjc4NzQyOTcwfQ.DfDGZ9xa8ubJjh36JCLLIswch6A0NL-s_Lfxfa6IzIo",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODc0NDU2NywiZXhwIjoxNjc4NzY2MTY3fQ.AmpWFpPPEMZIJ8rB7qgnuIXpomK9l7Y5W9E7GMKyH20",
 									"type": "string"
 								}
 							]
@@ -1188,7 +1188,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/parkings/1/average/datemin/07-03-2023/datemax/08-03-2023",
+							"raw": "http://localhost:8080/api/parking/1/average/datemin/07-03-2023/datemax/08-03-2023",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1196,7 +1196,7 @@
 							"port": "8080",
 							"path": [
 								"api",
-								"parkings",
+								"parking",
 								"1",
 								"average",
 								"datemin",
@@ -1220,7 +1220,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzb2Npb3Rlc3RAZW1haWwuY29tIiwiaWF0IjoxNjc4NzM3NzU0LCJleHAiOjE2Nzg3NTkzNTR9.Lr5bVxXFf1eRIZBMaUNM9369a24neysivKGxravvfLs",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODc0NDU2NywiZXhwIjoxNjc4NzY2MTY3fQ.AmpWFpPPEMZIJ8rB7qgnuIXpomK9l7Y5W9E7GMKyH20",
 									"type": "string"
 								}
 							]
@@ -1268,7 +1268,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzb2Npb3Rlc3RAZW1haWwuY29tIiwiaWF0IjoxNjc4NzM3NzU0LCJleHAiOjE2Nzg3NTkzNTR9.Lr5bVxXFf1eRIZBMaUNM9369a24neysivKGxravvfLs",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODc0NDU2NywiZXhwIjoxNjc4NzY2MTY3fQ.AmpWFpPPEMZIJ8rB7qgnuIXpomK9l7Y5W9E7GMKyH20",
 									"type": "string"
 								}
 							]
@@ -1285,7 +1285,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/parkings/1/average/datemin/09-03-2023/datemax/10-03-2023",
+							"raw": "http://localhost:8080/api/parking/1/average/datemin/09-03-2023/datemax/10-03-2023",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1293,7 +1293,7 @@
 							"port": "8080",
 							"path": [
 								"api",
-								"parkings",
+								"parking",
 								"1",
 								"average",
 								"datemin",
@@ -1317,7 +1317,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyQGVtYWlsLmNvbSIsImlhdCI6MTY3ODcyNDA5NywiZXhwIjoxNjc4NzQ1Njk3fQ.BZZNpeKZExKfmqkK4rQfawUf6jpB6R8h4XKP3LQxygY",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODc0NDU2NywiZXhwIjoxNjc4NzY2MTY3fQ.AmpWFpPPEMZIJ8rB7qgnuIXpomK9l7Y5W9E7GMKyH20",
 									"type": "string"
 								}
 							]
@@ -1334,7 +1334,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/parkings/average/user/3/datemin/13-03-2023/datemax/14-03-2023",
+							"raw": "http://localhost:8080/api/parking/average/user/3/datemin/13-03-2023/datemax/14-03-2023",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1342,7 +1342,7 @@
 							"port": "8080",
 							"path": [
 								"api",
-								"parkings",
+								"parking",
 								"average",
 								"user",
 								"3",
@@ -1367,7 +1367,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzb2Npb3Rlc3RAZW1haWwuY29tIiwiaWF0IjoxNjc4NzM3NzU0LCJleHAiOjE2Nzg3NTkzNTR9.Lr5bVxXFf1eRIZBMaUNM9369a24neysivKGxravvfLs",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODc0NDU2NywiZXhwIjoxNjc4NzY2MTY3fQ.AmpWFpPPEMZIJ8rB7qgnuIXpomK9l7Y5W9E7GMKyH20",
 									"type": "string"
 								}
 							]
@@ -1384,7 +1384,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/parkings/1/averagehours",
+							"raw": "http://localhost:8080/api/parking/1/averagehours",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1392,7 +1392,7 @@
 							"port": "8080",
 							"path": [
 								"api",
-								"parkings",
+								"parking",
 								"1",
 								"averagehours"
 							]
