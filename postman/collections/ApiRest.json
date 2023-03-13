@@ -920,6 +920,51 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Obtener promedio horas de uso de un parqueadero",
+					"id": "53bb6913-9b6f-426d-bda2-e158edd5f52b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyQGVtYWlsLmNvbSIsImlhdCI6MTY3ODcyNDA5NywiZXhwIjoxNjc4NzQ1Njk3fQ.BZZNpeKZExKfmqkK4rQfawUf6jpB6R8h4XKP3LQxygY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Parking 4\",\r\n    \"spots\": \"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/parkings/1/averagehours",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"parkings",
+								"1",
+								"averagehours"
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "5995ca0e-dd97-4c72-9b0c-8dd0f2f8209c"
