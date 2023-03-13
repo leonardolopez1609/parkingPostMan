@@ -212,7 +212,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/users/5",
+							"raw": "http://localhost:8080/api/user/5",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -220,7 +220,7 @@
 							"port": "8080",
 							"path": [
 								"api",
-								"users",
+								"user",
 								"5"
 							]
 						}
@@ -247,7 +247,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/users/1/parkings",
+							"raw": "http://localhost:8080/api/user/1/parkings",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -255,7 +255,7 @@
 							"port": "8080",
 							"path": [
 								"api",
-								"users",
+								"user",
 								"1",
 								"parkings"
 							]
@@ -275,7 +275,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyQGVtYWlsLmNvbSIsImlhdCI6MTY3ODcyNDA5NywiZXhwIjoxNjc4NzQ1Njk3fQ.BZZNpeKZExKfmqkK4rQfawUf6jpB6R8h4XKP3LQxygY",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODc0NDU2NywiZXhwIjoxNjc4NzY2MTY3fQ.AmpWFpPPEMZIJ8rB7qgnuIXpomK9l7Y5W9E7GMKyH20",
 									"type": "string"
 								}
 							]
@@ -365,7 +365,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/users/email",
+							"raw": "http://localhost:8080/api/user/email",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -373,7 +373,7 @@
 							"port": "8080",
 							"path": [
 								"api",
-								"users",
+								"user",
 								"email"
 							]
 						}
