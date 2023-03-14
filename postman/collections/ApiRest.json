@@ -7,28 +7,29 @@
 	},
 	"item": [
 		{
-			"name": "Users",
+			"name": "USUARIO",
 			"item": [
 				{
-					"name": "Crear Admin",
-					"id": "9133dd95-0c3f-4b63-9638-639d0d104073",
+					"name": "Crear un registo de entrada",
+					"id": "0e64082a-4813-4918-bc26-e9e0c37f16a7",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZWRyb0BlbWFpbC5jb20iLCJpYXQiOjE2Nzg4MDg4ODEsImV4cCI6MTY3ODgzMDQ4MX0.vP6E81rW5IvTpSQ7ZUwGC5nueLc30KEp-60uZAWLkUE",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Admin\",\r\n    \"email\": \"admin@mail.com\",\r\n    \"password\": \"admin\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": {
-							"raw": "http://localhost:8080/api/auth/admin/register",
+							"raw": "http://localhost:8080/api/enterings/vehicle/TTT123/in/parking/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -36,14 +37,130 @@
 							"port": "8080",
 							"path": [
 								"api",
-								"auth",
-								"admin",
-								"register"
+								"enterings",
+								"vehicle",
+								"TTT123",
+								"in",
+								"parking",
+								"1"
 							]
 						}
 					},
 					"response": []
 				},
+				{
+					"name": "Obtener un registro  de entrada por ID",
+					"id": "0e589499-ee44-455e-ab2d-0ffd6576541b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZWRyb0BlbWFpbC5jb20iLCJpYXQiOjE2Nzg4MDg4ODEsImV4cCI6MTY3ODgzMDQ4MX0.vP6E81rW5IvTpSQ7ZUwGC5nueLc30KEp-60uZAWLkUE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/enterings/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"enterings",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear un registro de salida",
+					"id": "0299373c-d36a-4f58-af7d-1b91279272dc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZWRyb0BlbWFpbC5jb20iLCJpYXQiOjE2Nzg4MDg4ODEsImV4cCI6MTY3ODgzMDQ4MX0.vP6E81rW5IvTpSQ7ZUwGC5nueLc30KEp-60uZAWLkUE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/histories/departure/vehicle/CCC123",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"histories",
+								"departure",
+								"vehicle",
+								"CCC123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener un historial de entrada por ID",
+					"id": "29782a4c-032a-4e25-89b1-eeb58d6e7f7c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZWRyb0BlbWFpbC5jb20iLCJpYXQiOjE2Nzg4MDg4ODEsImV4cCI6MTY3ODgzMDQ4MX0.vP6E81rW5IvTpSQ7ZUwGC5nueLc30KEp-60uZAWLkUE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/histories/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"histories",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "19083731-a729-4705-9cc3-79b04c4061f7"
+		},
+		{
+			"name": "ADMIN",
+			"item": [
 				{
 					"name": "Crear Socio",
 					"id": "12514a35-7ba2-4c1a-a673-91d9b3d93f7b",
@@ -90,6 +207,386 @@
 					"response": []
 				},
 				{
+					"name": "Crear Admin",
+					"id": "9133dd95-0c3f-4b63-9638-639d0d104073",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Admin\",\r\n    \"email\": \"admin@mail.com\",\r\n    \"password\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/auth/admin/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"admin",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener vehiculos en todos los parqueaderos",
+					"id": "9b9d8313-e88a-4b65-880a-2ee961d8eb40",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyQGVtYWlsLmNvbSIsImlhdCI6MTY3ODgwODYwMiwiZXhwIjoxNjc4ODMwMjAyfQ.zMXYCvVaGTM4mOgYOQREg0OmX_v_GwIEKYrQWDvcINI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/users/allparkings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"allparkings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Asociar un Socio por su ID a un parqueadero por ID",
+					"id": "4eb3613c-d99c-4a88-9c89-d90d904a4da3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyQGVtYWlsLmNvbSIsImlhdCI6MTY3ODgwODYwMiwiZXhwIjoxNjc4ODMwMjAyfQ.zMXYCvVaGTM4mOgYOQREg0OmX_v_GwIEKYrQWDvcINI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/users/10/associate/parkings/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"10",
+								"associate",
+								"parkings",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener todos los parqueaderos",
+					"id": "c0c25c89-fae4-4274-9d6f-fecd9e23313c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODgwMzkzNCwiZXhwIjoxNjc4ODI1NTM0fQ.YcYeve_sUIuiF7MwOLNgedpUxZ8v2MLCzIKcytTVaeU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Parking 4\",\r\n    \"spots\": \"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/parkings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"parkings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear un parqueadero",
+					"id": "284d0431-0305-42c7-80b4-49e4de7bbfdc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODgwMzkzNCwiZXhwIjoxNjc4ODI1NTM0fQ.YcYeve_sUIuiF7MwOLNgedpUxZ8v2MLCzIKcytTVaeU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Parking 2\",\r\n    \"spots\": \"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/parkings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"parkings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar un parquedero",
+					"id": "e59ea0e1-f3d9-4946-b993-5b8dd656bea4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODcyMTM3MCwiZXhwIjoxNjc4NzQyOTcwfQ.DfDGZ9xa8ubJjh36JCLLIswch6A0NL-s_Lfxfa6IzIo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Parking 4\",\r\n    \"spots\": \"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/parkings/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"parkings",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener lista vehiculos parqueados por primera vez",
+					"id": "861621d2-9c33-4037-973e-bfc353ca6a10",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODgwMzkzNCwiZXhwIjoxNjc4ODI1NTM0fQ.YcYeve_sUIuiF7MwOLNgedpUxZ8v2MLCzIKcytTVaeU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Parking 4\",\r\n    \"spots\": \"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/parkings/vehiclesfirst",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"parkings",
+								"vehiclesfirst"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener lista vehiculos parqueados mas de una vez",
+					"id": "b17c5c66-60f4-432c-813b-30d1e1afe8d4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODgwMzkzNCwiZXhwIjoxNjc4ODI1NTM0fQ.YcYeve_sUIuiF7MwOLNgedpUxZ8v2MLCzIKcytTVaeU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Parking 4\",\r\n    \"spots\": \"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/parkings/vehiclesrep",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"parkings",
+								"vehiclesrep"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener promedio de uso de todos los parqueaderos por rango de fecha",
+					"id": "536d9d87-d773-413c-bd4c-ce33a5035bd7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODgwMzkzNCwiZXhwIjoxNjc4ODI1NTM0fQ.YcYeve_sUIuiF7MwOLNgedpUxZ8v2MLCzIKcytTVaeU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Parking 4\",\r\n    \"spots\": \"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/parkings/average/datemin/12-03-2023/datemax/14-03-2023",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"parkings",
+								"average",
+								"datemin",
+								"12-03-2023",
+								"datemax",
+								"14-03-2023"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "beab5a64-2b16-41a8-96d6-02bc65b9d1b7"
+		},
+		{
+			"name": "SOCIO",
+			"item": [
+				{
 					"name": "Crear Usuario",
 					"id": "8689b3ab-d6e6-46ee-9a2a-2a89649f4ec6",
 					"protocolProfileBehavior": {
@@ -134,6 +631,86 @@
 					},
 					"response": []
 				},
+				{
+					"name": "Obtener vehiculos en los parqueaderos por ID de usuario",
+					"id": "515172d7-2c62-4c3f-b15f-7be13d8cda5b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZWRyb0BlbWFpbC5jb20iLCJpYXQiOjE2Nzg4MDg4ODEsImV4cCI6MTY3ODgzMDQ4MX0.vP6E81rW5IvTpSQ7ZUwGC5nueLc30KEp-60uZAWLkUE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/user/1/parkings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"1",
+								"parkings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Asociar un Usuario por su ID a un Socio por ID",
+					"id": "d28c12de-16c7-43ed-ae72-a4a246439991",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODgwMzYxOSwiZXhwIjoxNjc4ODI1MjE5fQ.cXlL25RaDxmiMZtwNvWtcbpJ4SjpSIlRZUBv6__7haQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/user/9/associate/partner/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"9",
+								"associate",
+								"partner",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "51e3ea90-bc17-4114-9729-7cc8dc8cf568"
+		},
+		{
+			"name": "Users",
+			"item": [
 				{
 					"name": "Login",
 					"id": "bb59d656-d120-43cb-8316-cec20f2e3a6e",
@@ -248,153 +825,6 @@
 					"response": []
 				},
 				{
-					"name": "Obtener vehiculos en los parqueaderos por ID de usuario",
-					"id": "515172d7-2c62-4c3f-b15f-7be13d8cda5b",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZWRyb0BlbWFpbC5jb20iLCJpYXQiOjE2Nzg4MDg4ODEsImV4cCI6MTY3ODgzMDQ4MX0.vP6E81rW5IvTpSQ7ZUwGC5nueLc30KEp-60uZAWLkUE",
-									"type": "string"
-								}
-							]
-						},
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/user/1/parkings",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"user",
-								"1",
-								"parkings"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Obtener vehiculos en todos los parqueaderos",
-					"id": "9b9d8313-e88a-4b65-880a-2ee961d8eb40",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyQGVtYWlsLmNvbSIsImlhdCI6MTY3ODgwODYwMiwiZXhwIjoxNjc4ODMwMjAyfQ.zMXYCvVaGTM4mOgYOQREg0OmX_v_GwIEKYrQWDvcINI",
-									"type": "string"
-								}
-							]
-						},
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/users/allparkings",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"users",
-								"allparkings"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Asociar un Socio por su ID a un parqueadero por ID",
-					"id": "4eb3613c-d99c-4a88-9c89-d90d904a4da3",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyQGVtYWlsLmNvbSIsImlhdCI6MTY3ODgwODYwMiwiZXhwIjoxNjc4ODMwMjAyfQ.zMXYCvVaGTM4mOgYOQREg0OmX_v_GwIEKYrQWDvcINI",
-									"type": "string"
-								}
-							]
-						},
-						"method": "PUT",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/users/10/associate/parkings/2",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"users",
-								"10",
-								"associate",
-								"parkings",
-								"2"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Asociar un Usuario por su ID a un Socio por ID",
-					"id": "d28c12de-16c7-43ed-ae72-a4a246439991",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODgwMzYxOSwiZXhwIjoxNjc4ODI1MjE5fQ.cXlL25RaDxmiMZtwNvWtcbpJ4SjpSIlRZUBv6__7haQ",
-									"type": "string"
-								}
-							]
-						},
-						"method": "PUT",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/user/9/associate/partner/5",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"user",
-								"9",
-								"associate",
-								"partner",
-								"5"
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Enviar email",
 					"id": "69d506f8-5e12-4822-beb8-54e0ebefc984",
 					"protocolProfileBehavior": {
@@ -442,160 +872,8 @@
 			"id": "bfb318c6-4fbc-4d5e-8bea-d209a9cd4078"
 		},
 		{
-			"name": "Enterings",
-			"item": [
-				{
-					"name": "Crear un registo de entrada",
-					"id": "0e64082a-4813-4918-bc26-e9e0c37f16a7",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZWRyb0BlbWFpbC5jb20iLCJpYXQiOjE2Nzg4MDg4ODEsImV4cCI6MTY3ODgzMDQ4MX0.vP6E81rW5IvTpSQ7ZUwGC5nueLc30KEp-60uZAWLkUE",
-									"type": "string"
-								}
-							]
-						},
-						"method": "POST",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/enterings/vehicle/TTT123/in/parking/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"enterings",
-								"vehicle",
-								"TTT123",
-								"in",
-								"parking",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Obtener un registro  de entrada por ID",
-					"id": "0e589499-ee44-455e-ab2d-0ffd6576541b",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZWRyb0BlbWFpbC5jb20iLCJpYXQiOjE2Nzg4MDg4ODEsImV4cCI6MTY3ODgzMDQ4MX0.vP6E81rW5IvTpSQ7ZUwGC5nueLc30KEp-60uZAWLkUE",
-									"type": "string"
-								}
-							]
-						},
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/enterings/4",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"enterings",
-								"4"
-							]
-						}
-					},
-					"response": []
-				}
-			],
-			"id": "f6bd87a8-a92a-4c68-96a5-d33d7f9d2f1f"
-		},
-		{
 			"name": "Histories",
 			"item": [
-				{
-					"name": "Crear un registro de salida",
-					"id": "0299373c-d36a-4f58-af7d-1b91279272dc",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZWRyb0BlbWFpbC5jb20iLCJpYXQiOjE2Nzg4MDg4ODEsImV4cCI6MTY3ODgzMDQ4MX0.vP6E81rW5IvTpSQ7ZUwGC5nueLc30KEp-60uZAWLkUE",
-									"type": "string"
-								}
-							]
-						},
-						"method": "POST",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/histories/departure/vehicle/CCC123",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"histories",
-								"departure",
-								"vehicle",
-								"CCC123"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Obtener un historial de entrada por ID",
-					"id": "29782a4c-032a-4e25-89b1-eeb58d6e7f7c",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZWRyb0BlbWFpbC5jb20iLCJpYXQiOjE2Nzg4MDg4ODEsImV4cCI6MTY3ODgzMDQ4MX0.vP6E81rW5IvTpSQ7ZUwGC5nueLc30KEp-60uZAWLkUE",
-									"type": "string"
-								}
-							]
-						},
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/histories/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"histories",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
 				{
 					"name": "Obtener historial vehiculos por rango fecha y caracter de placa",
 					"id": "d5c98091-a0ed-45f5-b22b-5c6de5de526b",
@@ -684,49 +962,6 @@
 			"name": "Parking",
 			"item": [
 				{
-					"name": "Crear un parqueadero",
-					"id": "284d0431-0305-42c7-80b4-49e4de7bbfdc",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODgwMzkzNCwiZXhwIjoxNjc4ODI1NTM0fQ.YcYeve_sUIuiF7MwOLNgedpUxZ8v2MLCzIKcytTVaeU",
-									"type": "string"
-								}
-							]
-						},
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"Parking 2\",\r\n    \"spots\": \"2\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8080/api/parkings",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"parkings"
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Actualizar un prqueadero por su ID",
 					"id": "72f12c70-55bb-450d-a1ce-14d12f692c53",
 					"protocolProfileBehavior": {
@@ -765,93 +1000,6 @@
 								"api",
 								"parking",
 								"3"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Eliminar un parquedero",
-					"id": "e59ea0e1-f3d9-4946-b993-5b8dd656bea4",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODcyMTM3MCwiZXhwIjoxNjc4NzQyOTcwfQ.DfDGZ9xa8ubJjh36JCLLIswch6A0NL-s_Lfxfa6IzIo",
-									"type": "string"
-								}
-							]
-						},
-						"method": "DELETE",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"Parking 4\",\r\n    \"spots\": \"2\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8080/api/parkings/2",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"parkings",
-								"2"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Obtener todos los parqueaderos",
-					"id": "c0c25c89-fae4-4274-9d6f-fecd9e23313c",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODgwMzkzNCwiZXhwIjoxNjc4ODI1NTM0fQ.YcYeve_sUIuiF7MwOLNgedpUxZ8v2MLCzIKcytTVaeU",
-									"type": "string"
-								}
-							]
-						},
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"Parking 4\",\r\n    \"spots\": \"2\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8080/api/parkings",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"parkings"
 							]
 						}
 					},
@@ -993,50 +1141,6 @@
 					"response": []
 				},
 				{
-					"name": "Obtener lista vehiculos parqueados por primera vez",
-					"id": "861621d2-9c33-4037-973e-bfc353ca6a10",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODgwMzkzNCwiZXhwIjoxNjc4ODI1NTM0fQ.YcYeve_sUIuiF7MwOLNgedpUxZ8v2MLCzIKcytTVaeU",
-									"type": "string"
-								}
-							]
-						},
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"Parking 4\",\r\n    \"spots\": \"2\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8080/api/parkings/vehiclesfirst",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"parkings",
-								"vehiclesfirst"
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Obtener lista vehiculos parqueados por primera por Socio",
 					"id": "2fdd5d5c-1d5c-4d87-9999-356ba1ecb067",
 					"protocolProfileBehavior": {
@@ -1077,50 +1181,6 @@
 								"user",
 								"10",
 								"vehiclesfirst"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Obtener lista vehiculos parqueados mas de una vez",
-					"id": "b17c5c66-60f4-432c-813b-30d1e1afe8d4",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODgwMzkzNCwiZXhwIjoxNjc4ODI1NTM0fQ.YcYeve_sUIuiF7MwOLNgedpUxZ8v2MLCzIKcytTVaeU",
-									"type": "string"
-								}
-							]
-						},
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"Parking 4\",\r\n    \"spots\": \"2\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8080/api/parkings/vehiclesrep",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"parkings",
-								"vehiclesrep"
 							]
 						}
 					},
@@ -1256,54 +1316,6 @@
 								"api",
 								"parking",
 								"3",
-								"average",
-								"datemin",
-								"12-03-2023",
-								"datemax",
-								"14-03-2023"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Obtener promedio de uso de todos los parqueaderos por rango de fecha",
-					"id": "536d9d87-d773-413c-bd4c-ce33a5035bd7",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODgwMzkzNCwiZXhwIjoxNjc4ODI1NTM0fQ.YcYeve_sUIuiF7MwOLNgedpUxZ8v2MLCzIKcytTVaeU",
-									"type": "string"
-								}
-							]
-						},
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"Parking 4\",\r\n    \"spots\": \"2\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8080/api/parkings/average/datemin/12-03-2023/datemax/14-03-2023",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"parkings",
 								"average",
 								"datemin",
 								"12-03-2023",
