@@ -51,11 +51,21 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODgwMzYxOSwiZXhwIjoxNjc4ODI1MjE5fQ.cXlL25RaDxmiMZtwNvWtcbpJ4SjpSIlRZUBv6__7haQ",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Socio Test\",\r\n    \"email\": \"sociotest@email.com\",\r\n    \"password\": \"1234\"\r\n}",
+							"raw": "{\r\n    \"name\": \"Jose\",\r\n    \"email\": \"jose@email.com\",\r\n    \"password\": \"1234\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -86,11 +96,21 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODgwMzYxOSwiZXhwIjoxNjc4ODI1MjE5fQ.cXlL25RaDxmiMZtwNvWtcbpJ4SjpSIlRZUBv6__7haQ",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Usuario\",\r\n    \"email\": \"usuario@email.com\",\r\n    \"password\": \"1234\"\r\n}",
+							"raw": "{\r\n    \"name\": \"Maria\",\r\n    \"email\": \"maria@email.com\",\r\n    \"password\": \"1234\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -204,7 +224,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzb2NpbzFAZW1haWwuY29tIiwiaWF0IjoxNjc4NzQyODI5LCJleHAiOjE2Nzg3NjQ0Mjl9.JYbqnl6yH6QODx021sYt_kabWjt7LzRButygFrwU9D0",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODgwMzkzNCwiZXhwIjoxNjc4ODI1NTM0fQ.YcYeve_sUIuiF7MwOLNgedpUxZ8v2MLCzIKcytTVaeU",
 									"type": "string"
 								}
 							]
@@ -212,7 +232,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/user/5",
+							"raw": "http://localhost:8080/api/user/11",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -221,7 +241,7 @@
 							"path": [
 								"api",
 								"user",
-								"5"
+								"11"
 							]
 						}
 					},
@@ -239,7 +259,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODcyMTM3MCwiZXhwIjoxNjc4NzQyOTcwfQ.DfDGZ9xa8ubJjh36JCLLIswch6A0NL-s_Lfxfa6IzIo",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZWRyb0BlbWFpbC5jb20iLCJpYXQiOjE2Nzg4MDg4ODEsImV4cCI6MTY3ODgzMDQ4MX0.vP6E81rW5IvTpSQ7ZUwGC5nueLc30KEp-60uZAWLkUE",
 									"type": "string"
 								}
 							]
@@ -275,7 +295,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODc0NDU2NywiZXhwIjoxNjc4NzY2MTY3fQ.AmpWFpPPEMZIJ8rB7qgnuIXpomK9l7Y5W9E7GMKyH20",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyQGVtYWlsLmNvbSIsImlhdCI6MTY3ODgwODYwMiwiZXhwIjoxNjc4ODMwMjAyfQ.zMXYCvVaGTM4mOgYOQREg0OmX_v_GwIEKYrQWDvcINI",
 									"type": "string"
 								}
 							]
@@ -299,7 +319,7 @@
 					"response": []
 				},
 				{
-					"name": "Asociar un usuario por su ID a un parqueadero por ID",
+					"name": "Asociar un Socio por su ID a un parqueadero por ID",
 					"id": "4eb3613c-d99c-4a88-9c89-d90d904a4da3",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -310,7 +330,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyQGVtYWlsLmNvbSIsImlhdCI6MTY3ODcxNjU5NiwiZXhwIjoxNjc4NzM4MTk2fQ.DFjsI8-6DxcxZkmSyH1nHgxyQ7RmtFKOu9cXQ9k53YU",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyQGVtYWlsLmNvbSIsImlhdCI6MTY3ODgwODYwMiwiZXhwIjoxNjc4ODMwMjAyfQ.zMXYCvVaGTM4mOgYOQREg0OmX_v_GwIEKYrQWDvcINI",
 									"type": "string"
 								}
 							]
@@ -318,7 +338,7 @@
 						"method": "PUT",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/users/5/associate/parkings/4",
+							"raw": "http://localhost:8080/api/users/10/associate/parkings/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -327,10 +347,48 @@
 							"path": [
 								"api",
 								"users",
-								"5",
+								"10",
 								"associate",
 								"parkings",
-								"4"
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Asociar un Usuario por su ID a un Socio por ID",
+					"id": "d28c12de-16c7-43ed-ae72-a4a246439991",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODgwMzYxOSwiZXhwIjoxNjc4ODI1MjE5fQ.cXlL25RaDxmiMZtwNvWtcbpJ4SjpSIlRZUBv6__7haQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/user/9/associate/partner/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"9",
+								"associate",
+								"partner",
+								"5"
 							]
 						}
 					},
@@ -398,7 +456,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyQGVtYWlsLmNvbSIsImlhdCI6MTY3ODcyNDA5NywiZXhwIjoxNjc4NzQ1Njk3fQ.BZZNpeKZExKfmqkK4rQfawUf6jpB6R8h4XKP3LQxygY",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZWRyb0BlbWFpbC5jb20iLCJpYXQiOjE2Nzg4MDg4ODEsImV4cCI6MTY3ODgzMDQ4MX0.vP6E81rW5IvTpSQ7ZUwGC5nueLc30KEp-60uZAWLkUE",
 									"type": "string"
 								}
 							]
@@ -437,7 +495,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZW9uYXJkb0BlbWFpbC5jb20iLCJpYXQiOjE2Nzg0NjY3NjgsImV4cCI6MTY3ODQ4ODM2OH0.zbcM2A4aOvphaoo7b-APnjuhBMF6f4-cf8a6JIR2cZY",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZWRyb0BlbWFpbC5jb20iLCJpYXQiOjE2Nzg4MDg4ODEsImV4cCI6MTY3ODgzMDQ4MX0.vP6E81rW5IvTpSQ7ZUwGC5nueLc30KEp-60uZAWLkUE",
 									"type": "string"
 								}
 							]
@@ -445,7 +503,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/enterings/1",
+							"raw": "http://localhost:8080/api/enterings/4",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -454,7 +512,7 @@
 							"path": [
 								"api",
 								"enterings",
-								"1"
+								"4"
 							]
 						}
 					},
@@ -478,7 +536,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyQGVtYWlsLmNvbSIsImlhdCI6MTY3ODcyNDA5NywiZXhwIjoxNjc4NzQ1Njk3fQ.BZZNpeKZExKfmqkK4rQfawUf6jpB6R8h4XKP3LQxygY",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZWRyb0BlbWFpbC5jb20iLCJpYXQiOjE2Nzg4MDg4ODEsImV4cCI6MTY3ODgzMDQ4MX0.vP6E81rW5IvTpSQ7ZUwGC5nueLc30KEp-60uZAWLkUE",
 									"type": "string"
 								}
 							]
@@ -486,7 +544,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/histories/departure/vehicle/AAA123",
+							"raw": "http://localhost:8080/api/histories/departure/vehicle/CCC123",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -497,7 +555,7 @@
 								"histories",
 								"departure",
 								"vehicle",
-								"AAA123"
+								"CCC123"
 							]
 						}
 					},
@@ -515,7 +573,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzb2Npb3Rlc3RAZW1haWwuY29tIiwiaWF0IjoxNjc4NzM3NzU0LCJleHAiOjE2Nzg3NTkzNTR9.Lr5bVxXFf1eRIZBMaUNM9369a24neysivKGxravvfLs",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZWRyb0BlbWFpbC5jb20iLCJpYXQiOjE2Nzg4MDg4ODEsImV4cCI6MTY3ODgzMDQ4MX0.vP6E81rW5IvTpSQ7ZUwGC5nueLc30KEp-60uZAWLkUE",
 									"type": "string"
 								}
 							]
@@ -550,7 +608,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyQGVtYWlsLmNvbSIsImlhdCI6MTY3ODcxNjU5NiwiZXhwIjoxNjc4NzM4MTk2fQ.DFjsI8-6DxcxZkmSyH1nHgxyQ7RmtFKOu9cXQ9k53YU",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyQGVtYWlsLmNvbSIsImlhdCI6MTY3ODgwODYwMiwiZXhwIjoxNjc4ODMwMjAyfQ.zMXYCvVaGTM4mOgYOQREg0OmX_v_GwIEKYrQWDvcINI",
 									"type": "string"
 								}
 							]
@@ -558,7 +616,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/histories/vehicles/datemin/10-03-2023/datemax/15-03-2023/in/parking/1/plate/1",
+							"raw": "http://localhost:8080/api/histories/vehicles/datemin/10-03-2023/datemax/15-03-2023/in/parking/1/plate/*",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -576,14 +634,14 @@
 								"parking",
 								"1",
 								"plate",
-								"1"
+								"*"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "Obtener historial vehiculos que ha estado en un parqueadero",
+					"name": "Obtener historial vehiculos que han estado en un parqueadero",
 					"id": "d5f9400a-a85a-4c43-8cb7-ef9bdcb61def",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -594,7 +652,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzb2Npb3Rlc3RAZW1haWwuY29tIiwiaWF0IjoxNjc4NzM3NzU0LCJleHAiOjE2Nzg3NTkzNTR9.Lr5bVxXFf1eRIZBMaUNM9369a24neysivKGxravvfLs",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODgwMzkzNCwiZXhwIjoxNjc4ODI1NTM0fQ.YcYeve_sUIuiF7MwOLNgedpUxZ8v2MLCzIKcytTVaeU",
 									"type": "string"
 								}
 							]
@@ -602,7 +660,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/histories/vehicles/parking/1",
+							"raw": "http://localhost:8080/api/histories/vehicles/parking/3",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -613,7 +671,7 @@
 								"histories",
 								"vehicles",
 								"parking",
-								"1"
+								"3"
 							]
 						}
 					},
@@ -637,7 +695,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyQGVtYWlsLmNvbSIsImlhdCI6MTY3ODcxNjA3NCwiZXhwIjoxNjc4NzM3Njc0fQ.bflIINSLtZt5hkTU6NDJD2Mkoia1aN6WJVAO2LwKFos",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODgwMzkzNCwiZXhwIjoxNjc4ODI1NTM0fQ.YcYeve_sUIuiF7MwOLNgedpUxZ8v2MLCzIKcytTVaeU",
 									"type": "string"
 								}
 							]
@@ -646,7 +704,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"Parking 1\",\r\n    \"spots\": \"2\"\r\n}",
+							"raw": "{\r\n    \"name\":\"Parking 2\",\r\n    \"spots\": \"2\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -680,7 +738,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzb2Npb3Rlc3RAZW1haWwuY29tIiwiaWF0IjoxNjc4NzM3NzU0LCJleHAiOjE2Nzg3NTkzNTR9.Lr5bVxXFf1eRIZBMaUNM9369a24neysivKGxravvfLs",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODgwMzkzNCwiZXhwIjoxNjc4ODI1NTM0fQ.YcYeve_sUIuiF7MwOLNgedpUxZ8v2MLCzIKcytTVaeU",
 									"type": "string"
 								}
 							]
@@ -689,7 +747,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"Parking N1\",\r\n    \"spots\": \"2\"\r\n}",
+							"raw": "{\r\n    \"name\":\"Parking N2\",\r\n    \"spots\": \"2\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -697,7 +755,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/parking/2",
+							"raw": "http://localhost:8080/api/parking/3",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -706,7 +764,7 @@
 							"path": [
 								"api",
 								"parking",
-								"2"
+								"3"
 							]
 						}
 					},
@@ -768,7 +826,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODc0NDU2NywiZXhwIjoxNjc4NzY2MTY3fQ.AmpWFpPPEMZIJ8rB7qgnuIXpomK9l7Y5W9E7GMKyH20",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODgwMzkzNCwiZXhwIjoxNjc4ODI1NTM0fQ.YcYeve_sUIuiF7MwOLNgedpUxZ8v2MLCzIKcytTVaeU",
 									"type": "string"
 								}
 							]
@@ -811,7 +869,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyQGVtYWlsLmNvbSIsImlhdCI6MTY3ODc0Mzg4NCwiZXhwIjoxNjc4NzY1NDg0fQ.NkHmmqtvRRTSGrHu1MSYkr70bN4qsl60vMwxY_F3fk0",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODgwMzkzNCwiZXhwIjoxNjc4ODI1NTM0fQ.YcYeve_sUIuiF7MwOLNgedpUxZ8v2MLCzIKcytTVaeU",
 									"type": "string"
 								}
 							]
@@ -855,7 +913,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzb2Npb3Rlc3RAZW1haWwuY29tIiwiaWF0IjoxNjc4NzM3NzU0LCJleHAiOjE2Nzg3NTkzNTR9.Lr5bVxXFf1eRIZBMaUNM9369a24neysivKGxravvfLs",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODgwMzkzNCwiZXhwIjoxNjc4ODI1NTM0fQ.YcYeve_sUIuiF7MwOLNgedpUxZ8v2MLCzIKcytTVaeU",
 									"type": "string"
 								}
 							]
@@ -872,7 +930,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/parking/1/vehiclesact",
+							"raw": "http://localhost:8080/api/parking/3/vehiclesact",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -881,7 +939,7 @@
 							"path": [
 								"api",
 								"parking",
-								"1",
+								"3",
 								"vehiclesact"
 							]
 						}
@@ -900,7 +958,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODc0NDU2NywiZXhwIjoxNjc4NzY2MTY3fQ.AmpWFpPPEMZIJ8rB7qgnuIXpomK9l7Y5W9E7GMKyH20",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODgwMzkzNCwiZXhwIjoxNjc4ODI1NTM0fQ.YcYeve_sUIuiF7MwOLNgedpUxZ8v2MLCzIKcytTVaeU",
 									"type": "string"
 								}
 							]
@@ -917,7 +975,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/parking/active/vehicle/1",
+							"raw": "http://localhost:8080/api/parking/active/vehicle/5",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -928,7 +986,7 @@
 								"parking",
 								"active",
 								"vehicle",
-								"1"
+								"5"
 							]
 						}
 					},
@@ -946,7 +1004,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODc0NDU2NywiZXhwIjoxNjc4NzY2MTY3fQ.AmpWFpPPEMZIJ8rB7qgnuIXpomK9l7Y5W9E7GMKyH20",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODgwMzkzNCwiZXhwIjoxNjc4ODI1NTM0fQ.YcYeve_sUIuiF7MwOLNgedpUxZ8v2MLCzIKcytTVaeU",
 									"type": "string"
 								}
 							]
@@ -990,7 +1048,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODc0NDU2NywiZXhwIjoxNjc4NzY2MTY3fQ.AmpWFpPPEMZIJ8rB7qgnuIXpomK9l7Y5W9E7GMKyH20",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODgwMzkzNCwiZXhwIjoxNjc4ODI1NTM0fQ.YcYeve_sUIuiF7MwOLNgedpUxZ8v2MLCzIKcytTVaeU",
 									"type": "string"
 								}
 							]
@@ -1007,7 +1065,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/parking/user/1/vehiclesfirst",
+							"raw": "http://localhost:8080/api/parking/user/10/vehiclesfirst",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1017,7 +1075,7 @@
 								"api",
 								"parking",
 								"user",
-								"1",
+								"10",
 								"vehiclesfirst"
 							]
 						}
@@ -1036,7 +1094,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODc0NDU2NywiZXhwIjoxNjc4NzY2MTY3fQ.AmpWFpPPEMZIJ8rB7qgnuIXpomK9l7Y5W9E7GMKyH20",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODgwMzkzNCwiZXhwIjoxNjc4ODI1NTM0fQ.YcYeve_sUIuiF7MwOLNgedpUxZ8v2MLCzIKcytTVaeU",
 									"type": "string"
 								}
 							]
@@ -1080,7 +1138,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyQGVtYWlsLmNvbSIsImlhdCI6MTY3ODcyNDA5NywiZXhwIjoxNjc4NzQ1Njk3fQ.BZZNpeKZExKfmqkK4rQfawUf6jpB6R8h4XKP3LQxygY",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODgwMzkzNCwiZXhwIjoxNjc4ODI1NTM0fQ.YcYeve_sUIuiF7MwOLNgedpUxZ8v2MLCzIKcytTVaeU",
 									"type": "string"
 								}
 							]
@@ -1097,7 +1155,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/parkings/user/1/vehiclesrep",
+							"raw": "http://localhost:8080/api/parking/user/10/vehiclesrep",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1105,9 +1163,9 @@
 							"port": "8080",
 							"path": [
 								"api",
-								"parkings",
+								"parking",
 								"user",
-								"1",
+								"10",
 								"vehiclesrep"
 							]
 						}
@@ -1126,7 +1184,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODc0NDU2NywiZXhwIjoxNjc4NzY2MTY3fQ.AmpWFpPPEMZIJ8rB7qgnuIXpomK9l7Y5W9E7GMKyH20",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODgwMzkzNCwiZXhwIjoxNjc4ODI1NTM0fQ.YcYeve_sUIuiF7MwOLNgedpUxZ8v2MLCzIKcytTVaeU",
 									"type": "string"
 								}
 							]
@@ -1143,7 +1201,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/parking/1/vehiclesrank",
+							"raw": "http://localhost:8080/api/parking/3/vehiclesrank",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1152,7 +1210,7 @@
 							"path": [
 								"api",
 								"parking",
-								"1",
+								"3",
 								"vehiclesrank"
 							]
 						}
@@ -1171,7 +1229,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODc0NDU2NywiZXhwIjoxNjc4NzY2MTY3fQ.AmpWFpPPEMZIJ8rB7qgnuIXpomK9l7Y5W9E7GMKyH20",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODgwMzkzNCwiZXhwIjoxNjc4ODI1NTM0fQ.YcYeve_sUIuiF7MwOLNgedpUxZ8v2MLCzIKcytTVaeU",
 									"type": "string"
 								}
 							]
@@ -1188,7 +1246,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/parking/1/average/datemin/07-03-2023/datemax/08-03-2023",
+							"raw": "http://localhost:8080/api/parking/3/average/datemin/12-03-2023/datemax/14-03-2023",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1197,12 +1255,12 @@
 							"path": [
 								"api",
 								"parking",
-								"1",
+								"3",
 								"average",
 								"datemin",
-								"07-03-2023",
+								"12-03-2023",
 								"datemax",
-								"08-03-2023"
+								"14-03-2023"
 							]
 						}
 					},
@@ -1220,7 +1278,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODc0NDU2NywiZXhwIjoxNjc4NzY2MTY3fQ.AmpWFpPPEMZIJ8rB7qgnuIXpomK9l7Y5W9E7GMKyH20",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODgwMzkzNCwiZXhwIjoxNjc4ODI1NTM0fQ.YcYeve_sUIuiF7MwOLNgedpUxZ8v2MLCzIKcytTVaeU",
 									"type": "string"
 								}
 							]
@@ -1237,7 +1295,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/parkings/average/datemin/07-03-2023/datemax/08-03-2023",
+							"raw": "http://localhost:8080/api/parkings/average/datemin/12-03-2023/datemax/14-03-2023",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1248,58 +1306,9 @@
 								"parkings",
 								"average",
 								"datemin",
-								"07-03-2023",
+								"12-03-2023",
 								"datemax",
-								"08-03-2023"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Obtener promedio de un parqueadero por rango de fecha",
-					"id": "545d894f-6b23-4778-81ca-f6bac25fd93d",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODc0NDU2NywiZXhwIjoxNjc4NzY2MTY3fQ.AmpWFpPPEMZIJ8rB7qgnuIXpomK9l7Y5W9E7GMKyH20",
-									"type": "string"
-								}
-							]
-						},
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"Parking 4\",\r\n    \"spots\": \"2\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8080/api/parking/1/average/datemin/09-03-2023/datemax/10-03-2023",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"parking",
-								"1",
-								"average",
-								"datemin",
-								"09-03-2023",
-								"datemax",
-								"10-03-2023"
+								"14-03-2023"
 							]
 						}
 					},
@@ -1317,7 +1326,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODc0NDU2NywiZXhwIjoxNjc4NzY2MTY3fQ.AmpWFpPPEMZIJ8rB7qgnuIXpomK9l7Y5W9E7GMKyH20",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODgwMzkzNCwiZXhwIjoxNjc4ODI1NTM0fQ.YcYeve_sUIuiF7MwOLNgedpUxZ8v2MLCzIKcytTVaeU",
 									"type": "string"
 								}
 							]
@@ -1334,7 +1343,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/parking/average/user/3/datemin/13-03-2023/datemax/14-03-2023",
+							"raw": "http://localhost:8080/api/parking/average/user/1/datemin/12-03-2023/datemax/14-03-2023",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1345,9 +1354,9 @@
 								"parking",
 								"average",
 								"user",
-								"3",
+								"1",
 								"datemin",
-								"13-03-2023",
+								"12-03-2023",
 								"datemax",
 								"14-03-2023"
 							]
@@ -1367,7 +1376,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODc0NDU2NywiZXhwIjoxNjc4NzY2MTY3fQ.AmpWFpPPEMZIJ8rB7qgnuIXpomK9l7Y5W9E7GMKyH20",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODgwMzkzNCwiZXhwIjoxNjc4ODI1NTM0fQ.YcYeve_sUIuiF7MwOLNgedpUxZ8v2MLCzIKcytTVaeU",
 									"type": "string"
 								}
 							]
