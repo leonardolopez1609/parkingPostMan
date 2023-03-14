@@ -242,6 +242,42 @@
 					"response": []
 				},
 				{
+					"name": "Obtener los Usuarios de un Socio",
+					"id": "7ce51e26-2f9f-444c-8932-83710ea76305",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODgwMzYxOSwiZXhwIjoxNjc4ODI1MjE5fQ.cXlL25RaDxmiMZtwNvWtcbpJ4SjpSIlRZUBv6__7haQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/users/1/usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"1",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Obtener vehiculos en todos los parqueaderos",
 					"id": "9b9d8313-e88a-4b65-880a-2ee961d8eb40",
 					"protocolProfileBehavior": {
