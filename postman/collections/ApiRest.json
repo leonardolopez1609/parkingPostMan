@@ -184,7 +184,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODgwMzYxOSwiZXhwIjoxNjc4ODI1MjE5fQ.cXlL25RaDxmiMZtwNvWtcbpJ4SjpSIlRZUBv6__7haQ",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3ODgyMjMxOCwiZXhwIjoxNjc4ODQzOTE4fQ.kS-hr1ps_JAiZXD0x7PxBi380nYn44oY_te5pYfKUMg",
 									"type": "string"
 								}
 							]
@@ -193,7 +193,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"SocioTest15\",\r\n    \"email\": \"sociotest15@email.com\",\r\n    \"password\": \"1234\"\r\n}",
+							"raw": "{\r\n    \"name\": \"SocioTest17\",\r\n    \"email\": \"sociotest17@email.com\",\r\n    \"password\": \"1234\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1375,41 +1375,6 @@
 					"response": []
 				},
 				{
-					"name": "Obtener un historial de entrada por ID",
-					"id": "29782a4c-032a-4e25-89b1-eeb58d6e7f7c",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZWRyb0BlbWFpbC5jb20iLCJpYXQiOjE2Nzg4MDg4ODEsImV4cCI6MTY3ODgzMDQ4MX0.vP6E81rW5IvTpSQ7ZUwGC5nueLc30KEp-60uZAWLkUE",
-									"type": "string"
-								}
-							]
-						},
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/histories/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"histories",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Obtener vehiculos en los parqueaderos por ID de usuario",
 					"id": "515172d7-2c62-4c3f-b15f-7be13d8cda5b",
 					"protocolProfileBehavior": {
@@ -1440,6 +1405,41 @@
 								"user",
 								"1",
 								"parkings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener un historial de entrada por ID",
+					"id": "29782a4c-032a-4e25-89b1-eeb58d6e7f7c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZWRyb0BlbWFpbC5jb20iLCJpYXQiOjE2Nzg4MDg4ODEsImV4cCI6MTY3ODgzMDQ4MX0.vP6E81rW5IvTpSQ7ZUwGC5nueLc30KEp-60uZAWLkUE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/histories/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"histories",
+								"1"
 							]
 						}
 					},
